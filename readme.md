@@ -10,68 +10,68 @@
 
 ## Database Schema
 
-1. Event {
-    _id : ObjectId
-    eventType : EventType
-    eventName : String
-    description : String
-    createdBy : Member
-    location : String
-    startDate : String (ISO_LOCAL_DATE_TIME)
-    endDate : String (ISO_LOCAL_DATE_TIME)
-    createdDate : String (ISO_LOCAL_DATE_TIME)
-    numberOfLikes : Integer
-    numberOfViews : Integer
-    numberOfWatchers : Integer
-    numberOfParticipants : Integer
-    recurring : Boolean
-    recurringFrequency : RecurringFrequency
-    expired : Boolean
-    registrations : Array(Registration)
-}
+1. Event {  
+    _id : ObjectId  
+    eventType : EventType  
+    eventName : String  
+    description : String  
+    createdBy : Member  
+    location : String  
+    startDate : String (ISO_LOCAL_DATE_TIME)  
+    endDate : String (ISO_LOCAL_DATE_TIME)  
+    createdDate : String (ISO_LOCAL_DATE_TIME)  
+    numberOfLikes : Integer  
+    numberOfViews : Integer  
+    numberOfWatchers : Integer  
+    numberOfParticipants : Integer  
+    recurring : Boolean  
+    recurringFrequency : RecurringFrequency  
+    expired : Boolean  
+    registrations : Array(Registration)  
+}  
 
-2. Member {
-    _id : ObjectId
-    firstName : String
-    lastName : String
-    email : String
-    isOrgAdmin : Boolean
-    isTeamAdmin : Boolean
-    teamId : String
-}
+2. Member {  
+    _id : ObjectId  
+    firstName : String  
+    lastName : String  
+    email : String  
+    isOrgAdmin : Boolean  
+    isTeamAdmin : Boolean  
+    teamId : String  
+}  
 
-3. Team {
-    _id : ObjectId
-    teamName : String
-    members : Array(Member)
-}
+3. Team {  
+    _id : ObjectId  
+    teamName : String  
+    members : Array(Member)  
+}  
 
-4. Registration {
-    member : Member
-    responseType : ResponseType
-}
+4. Registration {  
+    member : Member  
+    responseType : ResponseType  
+}  
 
 ## Constant Enums
 
-1. EventType {
-    ORGANIZATION,
-    TEAM,
-    PRIVATE
-}
+1. EventType {  
+    ORGANIZATION,  
+    TEAM,  
+    PRIVATE  
+}  
 
-2. RecurringFrequency {
-    NO,
-	D,
-	W,
-	M,
-	Y
-}
+2. RecurringFrequency {  
+    NO,  
+    D,  
+    W,  
+    M,  
+    Y  
+}  
 
-3. ResponseType {
-    PARTICIPATING,
-	MAYBEPARTICIPATING,
-	NOTPARTICIPATING
-}
+3. ResponseType {  
+    PARTICIPATING,  
+    MAYBEPARTICIPATING,  
+    NOTPARTICIPATING  
+}  
 
 ## API Endpoints
 
