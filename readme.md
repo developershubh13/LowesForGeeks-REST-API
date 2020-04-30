@@ -79,23 +79,23 @@ BASE URL - http://host:port/lowesforgeeks
 All requests have 'loggedInMemberId' passed in request header
 
 1. Event API
-    1. /event/create             - to create new event
-    2. /event/viewAll            - to view all hosted events based on the roles of logged in member
-    3. /event/view/{id}          - to view a particular event
-    4. /event/viewTrending       - to view trending events
-    5. /event/viewPopular        - to view popular events
-    6. /event/viewUpcoming       - to view upcoming events
-    7. /event/update/{id}        - to update an event
-    8. /event/delete/{id}        - to delete an event
+    1. /event/create            - to create new event
+    2. /event/viewAll           - to view all hosted events based on the roles of logged in member
+    3. /event/view/{id}         - to view a particular event
+    4. /event/viewTrending      - to view trending events
+    5. /event/viewPopular       - to view popular events
+    6. /event/viewUpcoming      - to view upcoming events
+    7. /event/update/{id}       - to update an event
+    8. /event/delete/{id}       - to delete an event
 
 2. Member API
-    1. /member/create            - to create a new member
-    2. /member/view/{id}         - to view a member
-    3. /member/viewAll           - to view all members in organization
-    4. /member/update/{id}       - to update a member
+    1. /member/create           - to create a new member
+    2. /member/view/{id}        - to view a member
+    3. /member/viewAll          - to view all members in organization
+    4. /member/update/{id}      - to update a member
 
 3. Team API
-    1. /team/create              - create a new team
-    2. /team/view/{id}           - to view a team
-    3. /team/viewAll             - to view all teams
-    4. /team/update/{id}         - to update a team
+    1. /team/create         - create a new team
+    2. /team/view/{id}      - to view a team
+    3. /team/viewAll        - to view all teams
+    4. /team/update/{id}    - to update a team
